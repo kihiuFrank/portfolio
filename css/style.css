@@ -467,19 +467,19 @@ header.sticky .nav-bar {
 }
 
 .bar .css:before {
-  width: 85%;
+  width: 80%;
 }
 
 .bar .javascript:before {
   width: 80%;
 }
 
-.bar .jquery:before {
-  width: 80%;
+.bar .mocha:before {
+  width: 85%;
 }
 
-.bar .php:before {
-  width: 75%;
+.bar .solidity:before {
+  width: 80%;
 }
 
 .experience-card {
