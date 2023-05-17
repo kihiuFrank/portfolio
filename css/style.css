@@ -534,11 +534,19 @@ header.sticky .nav-bar {
 }
 
 .service-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
   max-width: 100%;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
+  margin: 0 auto;
+}
+
+.service-container {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 0 auto;
 }
 
 .service-card {
