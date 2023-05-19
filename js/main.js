@@ -65,3 +65,9 @@ var swiper = new Swiper(".client-swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+const year = document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById(
+    "updateYourYearPLZ"
+  ).innerHTML = `@${new Date().getFullYear()} by Frankline Kihiu. All rights reserved.`;
+});
