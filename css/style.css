@@ -159,6 +159,7 @@ header.sticky .nav-bar {
   display: flex;
   flex-direction: column;
   margin-right: 40px;
+  margin-top: 10%;
 }
 
 .home-container .media-icons a {
