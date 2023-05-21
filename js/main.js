@@ -196,6 +196,33 @@ ScrollReveal().reveal("footer .group", {
   interval: 200,
 });
 
+// Submit data
+var btn = document.getElementById("btn");
+btn.addEventListener("click", function (e) {
+  e.preventDefault();
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var subject = document.getElementById("subject").value;
+  var message = document.getElementById("message").value;
+  var body =
+    "Name: " +
+    name +
+    "<br/> Email: " +
+    email +
+    "<br/> Subject: " +
+    subject +
+    "<br/> Message: " +
+    message;
+
+  Email.send({
+    SecureToken: "1b965641-b106-49a0-a8af-82bad84e3e15",
+    To: "franklinekihiu@outlook.com",
+    From: "franklinekihiu@gmail.com",
+    Subject: "New Contact Message",
+    Body: body,
+  }).then((message) => alert(message));
+});
+
 // Footer
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById(
