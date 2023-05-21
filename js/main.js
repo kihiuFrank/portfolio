@@ -213,6 +213,30 @@ btn.addEventListener("click", function (e) {
     subject +
     "<br/> Message: " +
     message;
+  var validRegex =
+    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+  if (name == "") {
+    alert("Name cannot be empty");
+    return false;
+  }
+  if (email == "") {
+    alert("email cannot be empty");
+    return false;
+  }
+  if (!email.match(validRegex)) {
+    alert("Invalid email address!");
+
+    return false;
+  }
+  if (subject == "") {
+    alert("Subject cannot be empty");
+    return false;
+  }
+  if (message == "") {
+    alert("Message cannot be empty");
+    return false;
+  }
 
   Email.send({
     SecureToken: "1b965641-b106-49a0-a8af-82bad84e3e15",
