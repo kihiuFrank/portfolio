@@ -819,6 +819,12 @@ header.sticky .nav-bar {
   transition: 0.5s ease;
 }
 
+.projects-model-body p1 {
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid var(--line-color);
+}
+
 .projects-model.active .projects-model-body {
   transform: translateY(0);
 }
@@ -1296,7 +1302,7 @@ footer a {
 }
 
 /*=======Media query max-width 730px=======*/
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 730px) {
   /*=======Common styles for all sections=======*/
   body {
     margin: 5rem 0 0 0;
