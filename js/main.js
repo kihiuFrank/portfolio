@@ -251,5 +251,5 @@ btn.addEventListener("click", function (e) {
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById(
     "updateYourYearPLZ"
-  ).innerHTML = `@${new Date().getFullYear()} by Frankline Kihiu. All rights reserved.`;
+  ).innerHTML = `Copyright @${new Date().getFullYear()}  by Frankline Kihiu. All rights reserved.`;
 });
